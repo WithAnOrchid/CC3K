@@ -10,3 +10,4 @@ Your project will be graded as follows:
 	Documentation	20%	                      Plan of attack; Final design document.
 	Design	20%	UML;                        good use of separate compilation, good
 object-oriented practice;                 is it well-structured, or is it one giant function?
+ 

@@ -28,10 +28,10 @@ public:
     Cell* getNeighbours(int index)const; //return the neighbour of the specific index
     void setType(char type); //set type of cell
     void setCoords(int r, int c); //set coordinate for a cell
-    void setBlocked(); //set blocked or not
-    void setChamber(Chamber *Chamber); //set the chamber it belongs to (TRICKY)
-    void setFloor(Floor *Floor); //set the floor the cell belongs to
-    void setModule(Module *Module); //set the Module the cell belongs to
+    void setBlocked(bool blocked); //set blocked or not
+    void setChamber(Chamber *chamber); //set the chamber it belongs to (TRICKY)
+    void setFloor(Floor *floors); //set the floor the cell belongs to
+    void setModule(Module *module); //set the Module the cell belongs to
     void addNeighbours(Cell *neighbours, int index); //add neighbour cells to *neighboours
     void notify(int row, int column, char type); //notify destination a cell has been occupied by a type (a character is away)
     void notifyCharacter(int row, int column, char symbol); //notify destination a cell has been occupied by a charater

@@ -62,16 +62,16 @@ void Cell::setFloor(Floor *floors){
     this->floors = floors;
 }
 
-void Cell::setModule(Module *Module){
+void Cell::setModule(Module *module){
     this->module=module;
 }
 
 void Cell::setBlocked(){
-    if (this->type == "." || this->type =="+" || this->type == "#"){
-        this->blocked == false;
+    if (type == "." || type =="+" || type == "#"){
+        blocked == false;
     }
     else {
-        this->blocked == true;
+        blocked == true;
     }
 }
 

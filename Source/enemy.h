@@ -9,7 +9,14 @@ class Enemy : public Character{
 		std::string race;
 		bool hostile;
 		bool moved;
-		Enemy(int hp,int atk,int def,double gold, std::string race,bool hostile, bool moved);
 	public:
-		int getAtk() const 
+		Enemy();
+		~Enemy();
+		int pAttack(Player* p);
+		void changeHP(int i);
+		void setHostile();
+		void setMoved();
+		void resetMoved();
+		bool isMoved() const;
+		double getSpawnProb() const;
 };
